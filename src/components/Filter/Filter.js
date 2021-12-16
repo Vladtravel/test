@@ -32,7 +32,6 @@ const Filter = () => {
         type="text"
         name="name"
         onChange={onFilter}
-        // onBlur={() => dispatch(actions.filterContactTypeBlur())}
         size="small"
         label="Find contact by Name"
         variant="outlined"
