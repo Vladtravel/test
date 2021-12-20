@@ -2,7 +2,6 @@ import { useSelector, useDispatch } from "react-redux";
 import operations from "../../redux/operations";
 import selectors from "../../redux/selectors";
 import s from "./ContactList.module.css";
-import PropTypes from "prop-types";
 import { useEffect } from "react";
 const shortid = require("shortid");
 
@@ -42,14 +41,5 @@ const ContactList = () => {
     </div>
   );
 };
-ContactList.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      email: PropTypes.string.isRequired,
-      phone: PropTypes.string.isRequired,
-    })
-  ),
-};
+
 export default ContactList;
